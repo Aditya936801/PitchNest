@@ -28,7 +28,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ q
           {posts?.length > 0 ? (
             posts?.map((post: StartupCardType) => <StartupCard key={post?._id} post={post} />)
           ) : (
-            <p className="no-results">No startups found</p>
+            <p className="no-result">No startups found</p>
           )}
         </ul>
       </section>
