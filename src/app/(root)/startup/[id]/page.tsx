@@ -27,7 +27,7 @@ const StartUpDetail = async ({ params }: { params: Promise<{ id: string }> }) =>
         <p className="sub-heading !max-w-5xl">{post?.description}</p>
       </section>
       <section className="section_container">
-        <img src={post?.image} alt="thumbnail" className="w-full h-auto rounded-xl" />
+        {post?.image && <img src={post?.image} alt="thumbnail" className="w-full h-auto rounded-xl" />}
         <div className="space-x-5 mt-10 max-w-4xl mx-auto">
           <div className="flex-between gap-5">
             <Link href={`/user/${post?.author?._id}`} className="flex gap-2 items-center mb-3">

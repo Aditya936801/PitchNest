@@ -22,7 +22,7 @@ const View = async ({ id }: { id: string }) => {
         <Ping />
       </div>
       <p className="view-text">
-        <span className="font-black">Views : {views}</span>
+        <span className="font-black">Views : {views || 0}</span>
       </p>
     </div>
   );
